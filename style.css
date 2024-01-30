@@ -177,6 +177,9 @@ button:not(:hover){
     border: none;
     background: var(--backgroud-color);
 }
+.input-wrapper input:focus{ 
+    outline: none;
+}
 .search-button{ 
     border-radius: 8px;
     background: var(--accent-color);
