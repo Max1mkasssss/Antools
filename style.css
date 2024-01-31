@@ -29,11 +29,12 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--backgroud-color);
+    cursor: default;
 } 
 .container{ 
     margin: 0 auto;
     width: 1225px;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
     padding: 10px;
 }
 ul{ 
@@ -247,6 +248,7 @@ button:not(:hover){
     border-radius: 15px;
     background: var(--backgroud-color);
     border: 1.5px solid rgba(255, 255, 255, 0.10);
+    cursor: pointer;
 }
 .card-list-item:hover{ 
     border-radius: 15px;
