@@ -1,3 +1,4 @@
+
 /* Fonts (@Import) */
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap');
 
@@ -25,6 +26,12 @@
 
 
 /* Main styles  */
+.no-select{ 
+    -webkit-user-select: none; 
+    -moz-user-select: none;   
+    -ms-user-select: none;    
+    user-select: none;  
+}
 body{ 
     margin: 0;
     padding: 0;
@@ -33,8 +40,8 @@ body{
 } 
 .container{ 
     margin: 0 auto;
-    width: 1225px;
-    /* outline: 2px solid red; */
+    max-width:  1225px;
+    outline: 2px solid red;
     padding: 10px;
 }
 ul{ 
@@ -76,6 +83,9 @@ a{
     font-weight: var(--Medium);
     line-height: normal;
 }
+.header-list-item:hover{ 
+    color: var(--white-color);
+}
 button{ 
     width: 118px;
     height: 48px;
@@ -107,6 +117,8 @@ button:not(:hover){
 
 .hero{ 
     margin-top: 115px;
+}
+.background-section-hero{ 
     background-image: url(/img/img-section-hero.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -204,6 +216,14 @@ button:not(:hover){
 }
 .img-wrapper-social-section-hero img:not(:hover){ 
     transition: 2s;
+}
+.search-button:hover{ 
+    color: var(--accent-color);
+    background: var(--white-color);
+    transition: 0.3s;
+}
+.search-button:not(:hover){ 
+    transition: 0.3s;
 }
 
 /* Section-2 Most Popular Tools  */
@@ -437,18 +457,18 @@ button:not(:hover){
 }
 .Newcomer-tools-section-text-block h2{ 
     color: rgba(255, 255, 255, 0.90);
-    font-family: Poppins;
+    font-family: var(--main-font);
     font-size: 48px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: var(--Medium);
     line-height: 130%; 
 }
 .Newcomer-tools-section-text-block{ 
     color: rgba(255, 255, 255, 0.55);
-    font-family: Poppins;
+    font-family: var(--main-font);
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: var(--Medium);
     line-height: 30px; 
 }
 .button-newcomer-tools-section{ 
@@ -464,10 +484,10 @@ button:not(:hover){
 }
 .Newcomer-tools-section-card-block p{
     color: rgba(255, 255, 255, 0.55);
-    font-family: Poppins;
+    font-family: var(--main-font);
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: var(--Medium);
     line-height: 30px;
 }
 .button-newcomer-tools-section{ 
@@ -479,3 +499,12 @@ button:not(:hover){
     flex-shrink: 0;
     text-align: center;
 }
+.button-newcomer-tools-section:hover{ 
+    background-color: var(--white-color);
+    color: var(--accent-color);
+    transition: 0.3s;
+}
+.button-newcomer-tools-section:not(:hover){ 
+    transition: 0.3s;
+}
+/* Section 5  */
