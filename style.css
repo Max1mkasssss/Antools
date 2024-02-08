@@ -350,6 +350,7 @@ button:not(:hover){
     font-style: normal;
     font-weight: var(--Regular);
     line-height: 30px; 
+    
 }
 .card-images-list{ 
     margin: 0;
