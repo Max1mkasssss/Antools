@@ -41,7 +41,7 @@ body{
 .container{ 
     margin: 0 auto;
     max-width:  1225px;
-    outline: 2px solid red;
+    /* outline: 2px solid red;  */
     padding: 10px;
 }
 ul{ 
@@ -54,7 +54,10 @@ a{
 .flex{ 
     display: flex;
 }
-
+p, h1, h2, h3, h4, h5, h6{ 
+    padding: 0;
+    margin: 0;
+}
 /* Header  */
 
 .nav-bar{ 
@@ -576,10 +579,74 @@ button:not(:hover){
     margin-right: 20px;
 }
 
-
-
+.BAA{ 
+    margin-top: 250px;
+}
+.BAA h2{ 
+    color: rgba(255, 255, 255, 0.9);
+    font-family: var(--main-font);
+    font-size: 48px;
+    font-weight: var(--Medium);
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.BAA p{ 
+    color: rgba(255, 255, 255, 0.55);
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-weight: var(--Medium);
+    line-height: 30px;
+    letter-spacing: 0%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
 .foot-btn{ 
     display: flex;
     justify-content: center;
 }
 
+/* Footer  */
+footer{ 
+    margin-top: 250px;
+}
+footer{ 
+    border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+.footer-list{ 
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-item{ 
+    width: 200px;
+}
+.logo-footer{ 
+    color: rgba(255, 255, 255, 0.9);
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: var(--Medium);
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+#footer-p-1{ 
+    color: rgba(255, 255, 255, 0.9);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: var(--Medium);
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+#footer-p-2{ 
+    color: rgba(255, 255, 255, 0.55);
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: var(--Regular);
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.logo-footer, #footer-p-1{ 
+    margin-bottom: 20px; 
+}
