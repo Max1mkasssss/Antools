@@ -509,3 +509,77 @@ button:not(:hover){
     transition: 0.3s;
 }
 /* Section 5  */
+
+.section-4{ 
+    margin-top: 200px;
+}
+.wrapper-section-4{ 
+    align-items: center;
+    justify-content: space-around;
+}
+.foto-section-4{ 
+    background: url(/img/ronald.png) no-repeat;
+    height: 492px;
+    width: 415px;
+}
+.name-frame{ 
+    margin-top: 372px;
+    margin-left: 130px;
+    padding: 10px 22px;
+    width: 265px;
+    height: 91px;
+    border-radius: 8px;
+    backdrop-filter: blur(50px);
+    background: rgba(40, 48, 54, 0.2);
+}
+.name-frame h3{ 
+    color: rgba(255, 253, 253, 0.78);
+    font-family: var(--main-font);
+    font-size: 26px;
+    font-weight: var(--Medium);
+    line-height: 39px;
+    letter-spacing: 1.5%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.name-frame p{ 
+    color: rgba(255, 253, 253, 0.55);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: var(--Regular);
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.text-section-4{ 
+    width: 515px;
+    height: 336px;
+    background: url(/img/“.png) no-repeat;
+    background-position: left top;
+}
+.wrapper-text-section-4 p{ 
+    color: rgba(255, 255, 255, 0.78);
+    font-family: var(--second-font);
+    font-size: 14px;
+    font-weight: var(--Regular);
+    line-height: 30px;
+    letter-spacing: 1.5%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    width: 390px;   
+    display: flex;
+    margin-top: 100px;
+    margin-right: 20px;
+}
+
+
+
+.foot-btn{ 
+    display: flex;
+    justify-content: center;
+}
+
