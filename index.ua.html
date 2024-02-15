@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antools</title>
+
+    <!-- Modern-normalize  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styles  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Website Icon  -->
+    <link rel="website icon" href="/img/logotype.svg">
+
+    <!-- Animation  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body class="no-select" translate="no">
+    <!-- Шапка сайту -->
+    <header class="header animate__animated animate__backInLeft">
+        <div class="container">
+            <nav class="nav-bar flex">
+                <div class="logotype-wrapp flex">
+                    <img src="img/logotype.svg" alt="логотип">
+                    <h3>antools.</h3>
+                </div>
+                <ul class="header-list flex">
+                    <li class="header-list-item"><a href="#">Головна</a></li>
+                    <li class="header-list-item"><a href="#">Категорії</a></li>
+                    <li class="header-list-item"><a href="#">Мої колекції</a></li>
+                    <li class="header-list-item"><a href="#">Блог</a></li>
+                </ul>
+                <div class="buttons flex">
+                    <button type="button">Увійти</button>
+                    <button type="button" style="width: 200px;">Зареєструватися</button>
+                    <button onclick="redirectToPageEN()" type="button">EN</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main  -->
+    <main class="main">
+
+        <!-- Розділ 1 (Геройський блок) -->
+        <section class="hero animate__animated animate__backInLeft">
+            <div class="container">
+                <div class="background-section-hero">
+                    <div class="wrapper-section-hero flex">
+                        <div class="text-block-section-hero">
+                            <h1 class="">Чудові інструменти для Дизайнера та Розробника<span
+                                    class="accent-point">.</span></h1>
+                            <h2>Antool - це веб-колекція інформації про платні або безкоштовні інструменти для дизайну
+                                та розробки.</h2>
+                            <div class="input-wrapper flex">
+                                <img src="img/search.svg" alt="">
+                                <input type="text" placeholder="Знайдіть більше ніж 430+ інструментів...">
+                                <button class="search-button">Пошук</button>
+                            </div>
+                            <div class="img-wrapper-social-section-hero flex">
+                                <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+                                <a href="#"><img src="img/instargam.svg" alt="instargam"></a>
+                                <a href="#"> <img src="img/X.svg" alt="X"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="most-popular-tools">
+            <div class="container">
+                <h2 id="Categories">Найпопулярніші Інструменти</h2>
+                <h3>Інструменти для найкращих Дизайнерів та Розробників, які найбільш популярно використовуються в світі
+                </h3>
+                <div class="cards">
+                    <ul class="card-list flex">
+                        <li class="card-list-item">
+                            <div class="card-text-about-apps flex">
+                                <img src="img/figma-logo.svg" alt="">
+                                <div class="card-text-about-apps-wrapper flex">
+                                    <h3>Figma</h3>
+                                    <h4>Безкоштовно</h4>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="card-images-wrapper flex">
+                                <ul class="card-images-list flex">
+                                    <li class="like"><img src="img/heard.svg" alt=""></li>
+                                    <li class="folder"><img src="img/folder.svg" alt=""></li>
+                                </ul>
+                                <p><a href="#">Перейти</a></p>
+                            </div>
+                        </li>
+                        <li class="card-list-item">
+                            <div class="card-text-about-apps flex">
+                                <img src="img/scetch-logo.svg" alt="">
+                                <div class="card-text-about-apps-wrapper flex">
+                                    <h3>Scetch</h3>
+                                    <h4>Пробний та Платний</h4>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="card-images-wrapper flex">
+                                <ul class="card-images-list flex">
+                                    <li><img src="img/heard.svg" alt=""></li>
+                                    <li><img src="img/folder.svg" alt=""></li>
+                                </ul>
+                                <p><a href="#">Перейти</a></p>
+                            </div>
+                        </li>
+                        <li class="card-list-item">
+                            <div class="card-text-about-apps flex">
+                                <img src="img/vs-code-logo.svg" alt="">
+                                <div class="card-text-about-apps-wrapper flex">
+                                    <h3>Visual Studio Code</h3>
+                                    <h4>Безкоштовно</h4>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="card-images-wrapper flex">
+                                <ul class="card-images-list flex">
+                                    <li><img src="img/heard.svg" alt=""></li>
+                                    <li><img src="img/folder.svg" alt=""></li>
+                                </ul>
+                                <p><a href="#">Перейти</a></p>
+                            </div>
+                        </li>
+                        <li class="card-list-item">
+                            <div class="card-text-about-apps flex">
+                                <img src="img/notion-logo.svg" alt="">
+                                <div class="card-text-about-apps-wrapper flex">
+                                    <h3>Notion</h3>
+                                    <h4>Безкоштовно та Платно</h4>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="card-images-wrapper flex">
+                                <ul class="card-images-list flex">
+                                    <li><img src="img/heard.svg" alt=""></li>
+                                    <li><img src="img/folder.svg" alt=""></li>
+                                </ul>
+                                <p><a href="#">Перейти</a></p>
+                            </div>
+                        </li>
+                        <li class="card-list-item">
+                            <div class="card-text-about-apps flex">
+                                <img src="img/slack-logo.svg" alt="">
+                                <div class="card-text-about-apps-wrapper flex">
+                                    <h3>Slack</h3>
+                                    <h4>Безкоштовно та Платно</h4>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="card-images-wrapper flex">
+                                <ul class="card-images-list flex">
+                                    <li><img src="img/heard.svg" alt=""></li>
+                                    <li><img src="img/folder.svg" alt=""></li>
+                                </ul>
+                                <p><a href="#">Перейти</a></p>
+                            </div>
+                        </li>
+                        <li class="card-list-item">
+                            <div class="card-text-about-apps flex">
+                                <img src="img/invision-logo.svg" alt="">
+                                <div class="card-text-about-apps-wrapper flex">
+                                    <h3>Invision</h3>
+                                    <h4>Безкоштовно та Платно</h4>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="card-images-wrapper flex">
+                                <ul class="card-images-list flex">
+                                    <li><img src="img/heard.svg" alt=""></li>
+                                    <li><img src="img/folder.svg" alt=""></li>
+                                </ul>
+                                <p><a href="#">Перейти</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="button-wrapp flex">
+            <input class="button" type="button" value="Load more">
+        </div>
+        </div>
+        </section>
+
+        <!-- Section-2  -->
+        <section class="net-works" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            class="most-popular-tools">
+            <div class="container">
+                <div class="net-works-section-wrapper">
+                    <h2>Довірено більш ніж 150+ брендами</h2>
+                    <ul class="section-net-works-list flex">
+                        <li class="section-net-works-list"><img src="img/microsoft.svg" alt="microsoft"></li>
+                        <li class="section-net-works-list"><img src="img/google.svg" alt=""></li>
+                        <li class="section-net-works-list"><img src="img/slack.svg" alt=""></li>
+                        <li class="section-net-works-list"><img src="img/wordpress.svg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Розділ 3 -->
+        <section class="Newcomer-Tools" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="container">
+                <div class="Newcomer-tools-wrapper flex">
+                    <div class="Newcomer-tools-section-text-block">
+                        <h2>Нові Інструменти</h2>
+                        <p>Вау! Подивіться на останні оновлення найбільш рекомендованих інструментів від надійних
+                            дизайнерів та розробників</p>
+                        <button class="button-newcomer-tools-section" type="button">Дізнатися більше</button>
+                    </div>
+                    <div class="Newcomer-tools-section-card-block">
+                        <ul class="card-list flex">
+                            <li class="card-list-item">
+                                <div class="card-text-about-apps flex">
+                                    <img src="img/zerplin-logo.svg" alt="">
+                                    <div class="card-text-about-apps-wrapper flex">
+                                        <h3>Zeplin</h3>
+                                        <h4>Безкоштовно та Платно</h4>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="card-images-wrapper flex">
+                                    <ul class="card-images-list flex">
+                                        <li><img src="img/heard.svg" alt=""></li>
+                                        <li><img src="img/folder.svg" alt=""></li>
+                                    </ul>
+                                    <p><a href="#">Перейти</a></p>
+                                </div>
+                            </li>
+                            <li class="card-list-item">
+                                <div class="card-text-about-apps flex">
+                                    <img src="img/php-logo.svg" alt="">
+                                    <div class="card-text-about-apps-wrapper flex">
+                                        <h3>PHPStorm</h3>
+                                        <h4>Безкоштовно</h4>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="card-images-wrapper flex">
+                                    <ul class="card-images-list flex">
+                                        <li><img src="img/heard.svg" alt=""></li>
+                                        <li><img src="img/folder.svg" alt=""></li>
+                                    </ul>
+                                    <p><a href="#">Перейти</a></p>
+                                </div>
+                            </li>
+                            <li class="card-list-item">
+                                <div class="card-text-about-apps flex">
+                                    <img src="img/toolbox-logo.svg" alt="">
+                                    <div class="card-text-about-apps-wrapper flex">
+                                        <h3>Toolbox</h3>
+                                        <h4>Безкоштовно</h4>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="card-images-wrapper flex">
+                                    <ul class="card-images-list flex">
+                                        <li><img src="img/heard.svg" alt=""></li>
+                                        <li><img src="img/folder.svg" alt=""></li>
+                                    </ul>
+                                    <p><a href="#">Перейти</a></p>
+                                </div>
+                            </li>
+                            <li class="card-list-item">
+                                <div class="card-text-about-apps flex">
+                                    <img src="img/procreate-logo.svg" alt="">
+                                    <div class="card-text-about-apps-wrapper flex">
+                                        <h3>Procreate</h3>
+                                        <h4>Платно</h4>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="card-images-wrapper flex">
+                                    <ul class="card-images-list flex">
+                                        <li><img src="img/heard.svg" alt="heard"></li>
+                                        <li><img src="img/folder.svg" alt="folder"></li>
+                                    </ul>
+                                    <p><a href="#">Перейти</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="container">
+                <div class="wrapper-section-4 flex">
+                    <div class="foto-section-4">
+                        <div class="name-frame">
+                            <h3>Рональд Річардс</h3>
+                            <p>Менеджер Продукту</p>
+                        </div>
+                    </div>
+                    <div class="text-section-4">
+                        <div class="wrapper-text-section-4">
+                            <p>Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do.
+                                Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt
+                                Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex
+                                commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="BAA" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="container">
+                <h2>Стати учасником?</h2>
+                <p style="width: 427px; text-align: center;">Приєднуйтеся до нас і отримуйте поради та хитрощі, щоб
+                    стати великим Дизайнером та Розробником</p>
+                <div class="foot-btn">
+                    <div class="input-wrapper  flex">
+                        <img src="img/search.svg" alt="">
+                        <input type="text" placeholder="Введіть свою електронну адресу...">
+                        <button class="search-button">Приєднатися</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <ul class="footer-list flex">
+                <li class="list-item-1 footer-item">
+                    <div class="logotype-wrapp flex logo-footer">
+                        <img src="img/logotype.svg" alt="logotype">
+                        <h3>antools.</h3>
+                    </div>
+                    <p id="footer-p-1">Авторське право 2021. Antools</p>
+                    <p id="footer-p-2">Antool - це веб-колекція інформації про платні або безкоштовні інструменти
+                        Дизайну та Розробки</p>
+                </li>
+                <li class="list-item-2 footer-item">
+                    <h3 class="logo-footer">Зв'язок з нами</h3>
+                    <a id="footer-p-2" href="tel:+621987463">+621987463</a>
+                    <address id="footer-p-2">М будівля, №10 А</address>
+                    <a id="footer-p-2" href="mailto:antools@awesome.com">antools@awesome.com</a>
+                </li>
+                <li class="list-item-3 footer-item">
+                    <h3 class="logo-footer">Категорії</h3>
+                    <p id="footer-p-2">Дизайн</p>
+                    <p id="footer-p-2">Розробка</p>
+                </li>
+                <li class="list-item-4 footer-item">
+                    <h3 class="logo-footer">Інформація про компанію</h3>
+                    <p id="footer-p-2">Про нас</p>
+                    <p id="footer-p-2">Наші партнери</p>
+                    <p id="footer-p-2">Блог</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        function redirectToPageEN() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+
+</html>
