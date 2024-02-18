@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <!-- Modern-normalize  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styles  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Website Icon  -->
+    <link rel="website icon" href="/img/logotype.svg">
+
+    <!-- Animation  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body class="reg-menu-body">
+    <main class="reg-menu-main">
+        <div class="reg-menu flex animate__animated animate__backInLeft">
+            <h2>Sign Up</h2>
+            <div class="inputs-reg-menu flex">
+                <input type="text" placeholder="Name">
+                <input type="email" name="" id="" placeholder="E-mail">
+                <input type="password" placeholder="Password">
+                <button onclick="redirectToPageEN()" class="reg-menu-sign-up-btn">Sign Up</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        function redirectToPageEN() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+
+</html>

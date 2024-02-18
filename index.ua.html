@@ -39,8 +39,8 @@
                     <li class="header-list-item"><a href="#">Блог</a></li>
                 </ul>
                 <div class="buttons flex">
-                    <button type="button">Увійти</button>
-                    <button type="button" style="width: 200px;">Зареєструватися</button>
+                    <button onclick="OpenRegMenuEN()" type="button">Увійти</button>
+                    <button onclick="OpenRegMenuEN()" type="button" style="width: 200px;">Зареєструватися</button>
                     <button onclick="redirectToPageEN()" type="button">EN</button>
                 </div>
             </nav>
@@ -374,6 +374,9 @@
     <script>
         function redirectToPageEN() {
             window.location.href = "index.html";
+        }
+        function OpenRegMenuEN(){
+            window.location.href = "reg-menu-en.html";
         }
     </script>
 </body>

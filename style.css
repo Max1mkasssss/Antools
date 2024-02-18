@@ -3,8 +3,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap');
 
 /* Variables  */
-:root{ 
-
+:root{
+    
     /* Colors  */
     --backgroud-color: #1E252B;
     --blur: blur(25px); 
@@ -651,3 +651,90 @@ footer{
     margin-bottom: 20px; 
 }
 
+/* Reg  */
+.reg-menu-body{ 
+    background-size: 100%;
+    background-image: url(https://bogatyr.club/uploads/posts/2023-02/1677197090_bogatyr-club-p-fon-kosmosa-dlya-fotoshopa-fon-pinterest-1.jpg);
+}
+.reg-menu-main{ 
+    margin: 0;
+    padding: 0;
+}
+.reg-menu{ 
+    margin: 25px auto;
+    background: rgb(128, 0, 255);
+    width: 400px;
+    border-radius: 10px;
+    height: 500px;
+    flex-direction: column;
+    gap: 10px;
+}
+.reg-menu h2{ 
+    margin-top: 20px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-family: var(--second-font);
+    font-weight: var(--SemiBold);
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+} 
+.inputs-reg-menu{ 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+.inputs-reg-menu input{ 
+    padding: 5px;
+    height: 30px; 
+    border-radius: 3px;
+    width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(20px); 
+    outline: none;
+    border: none;
+    caret-color: white;
+} 
+.inputs-reg-menu input::placeholder{ 
+    color: white;
+    font-family: var(--main-font);
+    letter-spacing: 2px;
+}
+.inputs-reg-menu input:focus{ 
+    border: none;
+    outline: none;
+}
+.reg-menu-sign-up-btn{ 
+    margin-top: 50px;
+    width: 118px;
+    height: 48px;
+    flex-shrink: 0;
+    color: var(--text-main-color);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: var(--SemiBold);
+    line-height: normal;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: var(--backgroud-color);
+    text-align: center;
+}
+.reg-menu-sign-up-btn:hover{ 
+    border-radius: 8px;
+    background: var(--white-color);
+    color: black;
+    text-align: center;
+    transition: 1s;
+    cursor: pointer;
+}
+button:not(:hover){ 
+    transition: 0.7s;
+}   

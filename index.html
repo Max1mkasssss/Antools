@@ -39,8 +39,8 @@
                     <li class="header-list-item"><a href="#">Blog</a></li>
                 </ul>
                 <div class="buttons flex">
-                    <button type="button">Login</button>
-                    <button id="openModal" type="button">Sign Up</button>
+                    <button onclick="OpenRegMenuEN()" type="button">Login</button>
+                    <button onclick="OpenRegMenuEN()" type="button">Sign Up</button>
                     <button onclick="redirectToPage()" type="button">UA</button>
                 </div>
             </nav>
@@ -374,8 +374,10 @@
         function redirectToPage() {
             window.location.href = "index.ua.html";
         }
+        function OpenRegMenuEN() {
+            window.location.href = "reg-menu-en.html";
+        }
     </script>
-    <script src="script.js"></script>
 </body>
 
 </html>
