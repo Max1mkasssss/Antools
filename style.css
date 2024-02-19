@@ -738,3 +738,29 @@ footer{
 button:not(:hover){ 
     transition: 0.7s;
 }   
+#scrollToTopBtn {
+    display: none; /* Кнопка изначально скрыта */
+    position: fixed; /* Кнопка фиксирована */
+    bottom: 20px; /* Отступ от нижнего края */
+    right: 20px; /* Отступ от правого края */
+}
+  
+  #scrollToTopBtn:hover {
+    background-color: #555;
+}
+
+.go-to-top{ 
+    font-size: 20px;
+    background-color: #4a4a4a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
