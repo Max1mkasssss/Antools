@@ -654,7 +654,8 @@ footer{
 /* Reg  */
 .reg-menu-body{ 
     background-size: 100%;
-    background-image: url(https://bogatyr.club/uploads/posts/2023-02/1677197090_bogatyr-club-p-fon-kosmosa-dlya-fotoshopa-fon-pinterest-1.jpg);
+    /* background-image: url(https://bogatyr.club/uploads/posts/2023-02/1677197090_bogatyr-club-p-fon-kosmosa-dlya-fotoshopa-fon-pinterest-1.jpg); */
+   background-color: var(--backgroud-color);
 }
 .reg-menu-main{ 
     margin: 0;

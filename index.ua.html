@@ -33,10 +33,10 @@
                     <h3>antools.</h3>
                 </div>
                 <ul class="header-list flex">
-                    <li class="header-list-item"><a href="#">Головна</a></li>
-                    <li class="header-list-item"><a href="#">Категорії</a></li>
-                    <li class="header-list-item"><a href="#">Мої колекції</a></li>
-                    <li class="header-list-item"><a href="#">Блог</a></li>
+                    <li class="header-list-item"><a href="#home">Головна</a></li>
+                    <li class="header-list-item"><a href="#categories">Категорії</a></li>
+                    <li class="header-list-item"><a href="#collections">Мої колекції</a></li>
+                    <li class="header-list-item"><a href="#blog">Блог</a></li>
                 </ul>
                 <div class="buttons flex">
                     <button onclick="OpenRegMenuEN()" type="button">Увійти</button>
@@ -78,7 +78,7 @@
 
         <section data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="most-popular-tools">
             <div class="container">
-                <h2 id="Categories">Найпопулярніші Інструменти</h2>
+                <h2 id="categories">Найпопулярніші Інструменти</h2>
                 <h3>Інструменти для найкращих Дизайнерів та Розробників, які найбільш популярно використовуються в світі
                 </h3>
                 <div class="cards">
@@ -198,7 +198,7 @@
 
         <!-- Section-2  -->
         <section class="net-works" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-            class="most-popular-tools">
+            class="most-popular-tools" id="collections">
             <div class="container">
                 <div class="net-works-section-wrapper">
                     <h2>Довірено більш ніж 150+ брендами</h2>
@@ -299,7 +299,7 @@
         </section>
 
 
-        <section class="section-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <section class="section-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="blog">
             <div class="container">
                 <div class="wrapper-section-4 flex">
                     <div class="foto-section-4">
@@ -366,7 +366,7 @@
             </ul>
         </div>
     </footer>
-
+    <button class="go-to-top" onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">↑</button>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -375,9 +375,41 @@
         function redirectToPageEN() {
             window.location.href = "index.html";
         }
-        function OpenRegMenuEN(){
+        function OpenRegMenuEN() {
             window.location.href = "reg-menu-en.html";
         }
+
+
+        // Плавний скролл 
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+
+        // скрол - стрілочка 
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        }
+
     </script>
 </body>
 
