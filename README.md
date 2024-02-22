@@ -10,7 +10,6 @@
 
 ![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)&nbsp;
 ![Figma](https://img.shields.io/badge/-Figma-05122A?style=flat&logo=figma)&nbsp;
-![Pixso](https://github.com/Max1mkasssss/Antools/assets/144679420/ace1f9f5-bd7e-4d0f-b375-12d28df47592)&nbsp;
 
 
 
