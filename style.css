@@ -521,7 +521,7 @@ button:not(:hover){
     justify-content: space-around;
 }
 .foto-section-4{ 
-    background: url(/img/ronald.png) no-repeat;
+    background: url(img/ronald.png) no-repeat;
     height: 492px;
     width: 415px;
 }
